@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Калькулятор</title>
+</head>
+<body onload="funonload();">
+    <div class="container">
+        <article class="calc">
+            <div class="calc__output" id="calc__output">
+                0
+            </div>
+            <div class="calc__inner winHeight" id="calc__inner">
+                <input type="number" name="firstNumber" id="firstNumber" class="calc__input firstNumber">
+                <form class="calc__opers" name="calc__opers">
+                    <button class="calc__btn" id="plus" name="plus">+</button>
+                    <button class="calc__btn" id="division" name="division">/</button>
+                </form>
+                <input type="number" name="secondNumber" id="secondNumber"  class="calc__input secondNumber">
+            </div>
+            <div class="squre winHeight" id="squre">
+                <div class="calc__inner--square">
+                    <form class="calc__inner--square__form" name="calc__inner__square__form0">
+                        <button class="btn--mini" id="calc__inner__square__zero" name="calc__inner__square__zero">+</button>
+                    </form>
+                    <input type="number" min="1" name="firstNumber" id="squre__firstNumber" class="calc__input--mini">
+                    <div class="calc__inner--square__text">
+                        X^2
+                    </div>
+                    <form class="calc__inner--square__form" name="calc__inner__square__form1">
+                        <button class="btn--mini" id="calc__inner__square__first" name="calc__inner__square__first">+</button>
+                    </form>
+                    <input type="number" min="1" name="secondNumber" id="squre__secondNumber"  class="calc__input--mini">
+                    <div class="calc__inner--square__text">
+                        X
+                    </div>
+                    <form class="calc__inner--square__form" name="calc__inner__square__form2">
+                        <button class="btn--mini" id="calc__inner__square__second" name="calc__inner__square__second">+</button>
+                    </form>
+                    <input type="number" min="1" name="thirdNumber" id="squre__thirdNumber" class="calc__input--mini">
+                    <div class="calc__inner--square__text">
+                        = 0
+                    </div>
+                </div>
+                <form class="squre__form" name="squre__form">
+                    <button class="squreBtn" id="squreBtn" name="squreBtn">Посчитать корни</button>
+                </form>
+            </div>
+            <div class="twoPoint winHeight" id="twoPoint">
+                <div class="gridTwoPoint">
+                    <div class="calc__inner--square__text gridField">
+                        <div class="gridFieldstr">
+                            <div class="text--xl">
+                                X
+                            </div>
+                            <div class="text--xs">
+                                1
+                            </div>
+                        </div>
+                        <input type="number" min="1" id="x1"  class="calc__input--mini">
+                    </div>
+                    <div class="calc__inner--square__text gridField">
+                        <div class="gridFieldstr">
+                            <div class="text--xl">
+                                Y
+                            </div>
+                            <div class="text--xs">
+                                1
+                            </div>
+                        </div>
+                        <input type="number" min="1" id="y1"  class="calc__input--mini">
+                    </div>
+                    <div class="calc__inner--square__text gridField">
+                        <div class="gridFieldstr">
+                            <div class="text--xl">
+                                X
+                            </div>
+                            <div class="text--xs">
+                                2
+                            </div>
+                        </div>
+                        <input type="number" min="1" id="x2"  class="calc__input--mini">
+                    </div>
+                    <div class="calc__inner--square__text gridField">
+                        <div class="gridFieldstr">
+                            <div class="text--xl">
+                                Y
+                            </div>
+                            <div class="text--xs">
+                                2
+                            </div>
+                        </div>
+                        <input type="number" min="1" id="y2"  class="calc__input--mini">
+                    </div>
+                </div>
+                <form class="squre__form" name="twoPoint__point">
+                    <button class="twoPointBtn" id="twoPointBtn" name="twoPointBtn">Рассчитать расстояние</button>
+                </form>
+            </div>
+
+            <div class="menu">
+                <button class="menu__el" id="menu__1">СЛОЖЕНИЕ <br> И  <br>ДЕЛЕНИЕ</button>
+                <button class="menu__el" id="menu__2">КВАДРАТНОЕ <br> УРАВНЕНИЕ</button>
+                <button class="menu__el" id="menu__3">РАССТОЯНИЕ <br> МЕЖДУ ТОЧКАМИ</button>
+            </div>
+        </article>
+    </div>
+    <script src="./assets/js/calc.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+*,
+::before,
+::after {
+  color: white;
+  box-sizing: border-box;
+}
+.container{
+    align-self: center;
+    width: 450px;
+    background-color: #212121;
+    margin: auto;
+}
+.calc{
+    display: flex;
+    flex-direction: column;
+}
+.calc__inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.calc__inner--square{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance:textfield;
+}
+.btn--mini{
+    background-color: #212121;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+.squre__form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.squreBtn{
+    margin-top: 12px;
+    background-color: #333333;
+    border: none;
+    border-radius: 24px;
+    width: 200px;
+    height: 46px;
+    font-size: 18px;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+}
+.squreBtn:hover{
+    background-color: #EA8357;
+}
+.btn--mini:hover{
+    background-color: #EA8357;
+}
+.calc__input--mini{
+    width: 68px;
+    height: 46px;
+    background-color: #333333;
+    border: none;
+}
+.calc__inner--square__text{
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+}
+.calc__inner--square__form{
+    display:flex;
+    align-items: center;
+}
+.calc__opers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.calc__input{
+    font-size: 36px;
+    weight: bold;
+    border: none;
+    width: 190px;
+    height: 76px;
+    background-color: #333333;
+    margin: auto;
+}
+.calc__input--mini{
+    border-radius: 20px;
+}
+.calc__btn:nth-child(2){
+    margin: 15px 0 15px 0;
+}
+.calc__btn{
+    cursor: pointer;
+    display: flex;
+    background-color: #333333;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    font-size: 25px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+.calc__output{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #333333;
+    height: 76px;
+    width: 46;
+    margin-bottom: 19px;
+    font-size: 48px;
+    font-weight: bold;
+    align-items: center;
+}
+.firstNumber{
+    border-radius: 0 20px 20px 0;
+}
+.secondNumber{
+    border-radius: 20px 0 0 20px;
+}
+.menu{
+    margin-top: 19px;
+    background-color: #333333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.menu__el{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    height: 76px;
+    opacity: 70%;
+    cursor: pointer;
+    background-color: #333333;
+    border: none;
+}
+.menu__el:hover{
+    background-color: #262626;
+}
+.menu__active__el{
+    background-color: #262626;
+}
+.calc__btn:hover{
+    background-color: #EA8357;
+}
+#cancel{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+
+    /* Firefox */
+    -moz-transform: rotate(45deg);
+  
+    /* IE */
+    -ms-transform: rotate(45deg);
+  
+    /* Opera */
+    -o-transform: rotate(45deg);
+  
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.calc__input--mini{
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+}
+.gridTwoPoint{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px 100px;
+}
+.text--xs{
+    font-size: 20px;
+}
+.gridField{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gridFieldstr{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.twoPointBtn{
+    margin-top: 12px;
+    background-color: #333333;
+    border: none;
+    border-radius: 24px;
+    width: 220px;
+    height: 46px;
+    font-size: 18px;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+}
+.squre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.diplayNone{
+    display: none;
+}
+.winHeight{
+    height: 250px;
+}
